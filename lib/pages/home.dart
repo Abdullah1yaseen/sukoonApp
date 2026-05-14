@@ -15,7 +15,7 @@ backgroundColor: Color(0xFF1E3A5F),
     height: 200,
     color: Colors.blue,
     child: Text("طريقة عمل سُكون"),
-  )
+  ),  
     );
   }
 }
