@@ -36,6 +36,7 @@ child: Column(
       "طريقة عمل سُكون",
       style: TextStyle(
         fontSize: 22,
+        color: Colors.white,
 
         ),
         ),
@@ -43,22 +44,26 @@ child: Column(
           "تأكد من تشغيل البلوتوث",
           style: TextStyle(
             fontSize: 16,
+            color: Colors.white,
           ),
           ),
     Text("تأكد من وجود جهاز سُكون قريب منك",
     style: TextStyle(
       fontSize: 16,
+      color: Colors.white,
     ),
     ),
     Text("منح الاذونات اللازمة للعمل بشكل صحيح",
     style: TextStyle(
       fontSize: 16,
+      color: Colors.white,
     ),)
   ],
 ),
 
   ),
  ), 
+ backgroundColor: Color(0xFF0F172A),
     );
   }
 }
