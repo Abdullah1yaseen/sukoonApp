@@ -13,8 +13,11 @@ backgroundColor: Color(0xFF1E3A5F),
   body: Container(
     width: double.infinity,
     height: 200,
+    decoration: BoxDecoration(
+borderRadius: BorderRadius.all(Radius.circular(20)),
     color: Colors.blue,
-    child: Text("طريقة عمل سُكون"),
+    ),
+    child: Center(child: Text("طريقة عمل سُكون")),
   ),  
     );
   }
