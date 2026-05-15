@@ -10,15 +10,55 @@ appBar: AppBar(
   centerTitle: true,
 backgroundColor: Color(0xFF1E3A5F),  
 ),
-  body: Container(
-    width: double.infinity,
-    height: 200,
-    decoration: BoxDecoration(
-borderRadius: BorderRadius.all(Radius.circular(20)),
-    color: Colors.blue,
+ body: Center(
+  child: Container(
+width: 320,
+padding: EdgeInsets.all(20),
+decoration: BoxDecoration(
+  color: Colors.white.withOpacity(0.1),
+  borderRadius: BorderRadius.circular(20),
+  border: Border.all(
+    color: Colors.white.withOpacity(0.2)
+  ),
+  boxShadow: [
+  BoxShadow(
+    color: Colors.black.withOpacity(0.2),
+    blurRadius: 10,
+    offset: Offset(0, 5)
+  ),
+  ] 
+),
+child: Column(
+  crossAxisAlignment: CrossAxisAlignment.end,
+  mainAxisSize: MainAxisSize.min,
+  children: [
+    Text(
+      "طريقة عمل سُكون",
+      style: TextStyle(
+        fontSize: 22,
+
+        ),
+        ),
+        Text(
+          "تأكد من تشغيل البلوتوث",
+          style: TextStyle(
+            fontSize: 16,
+          ),
+          ),
+    Text("تأكد من وجود جهاز سُكون قريب منك",
+    style: TextStyle(
+      fontSize: 16,
     ),
-    child: Center(child: Text("طريقة عمل سُكون")),
-  ),  
+    ),
+    Text("منح الاذونات اللازمة للعمل بشكل صحيح",
+    style: TextStyle(
+      fontSize: 16,
+    ),)
+  ],
+),
+
+  ),
+ ), 
     );
   }
 }
